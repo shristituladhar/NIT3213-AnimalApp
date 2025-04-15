@@ -111,10 +111,10 @@ Lecturer: Dr. Madiha Anjum
 ## Image & Icon Credits
 
 - **Login Screen Icon**:  
-  *"Login icon"* by Freepik – [Flaticon](https://www.flaticon.com/free-icon/login_4496184)
+  *"Login icon"* by Freepik - [Flaticon](https://www.flaticon.com/free-icon/login_4496184)
 
 - **Login Screen Background Image**:  
-  *"Wild Cartoon American Animal Characters Group"* – [PNGTree](https://png.pngtree.com/png-vector/20240723/ourmid/pngtree-wild-cartoon-american-animal-characters-group-png-image_12954309.png)
+  *"Wild Cartoon American Animal Characters Group"* - [PNGTree](https://png.pngtree.com/png-vector/20240723/ourmid/pngtree-wild-cartoon-american-animal-characters-group-png-image_12954309.png)
 
 
 
