@@ -13,6 +13,9 @@ import com.example.nit3213app.api.ApiClient
 import com.example.nit3213app.api.LoginRequest
 import com.google.android.material.textfield.TextInputEditText
 import kotlinx.coroutines.launch
+import org.koin.android.ext.android.inject
+import com.example.nit3213app.api.ApiService
+
 
 class LoginActivity : AppCompatActivity() {
 
@@ -40,7 +43,8 @@ class LoginActivity : AppCompatActivity() {
                 // Coroutine (background thread)
                 lifecycleScope.launch {
                     try {
-                        val response = ApiClient.apiService.login(LoginRequest(username, password))
+                        val apiService: ApiService by inject()
+                        val response = apiService.login(LoginRequest(username, password))
                         progressBar.visibility = View.GONE
 
                         if (response.isSuccessful && response.body() != null) {

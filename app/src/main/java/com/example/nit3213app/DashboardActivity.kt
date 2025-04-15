@@ -13,6 +13,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.nit3213app.api.ApiClient
 import com.example.nit3213app.api.Entity
 import kotlinx.coroutines.launch
+import org.koin.android.ext.android.inject
+import com.example.nit3213app.api.ApiService
+
 
 
 class DashboardActivity : AppCompatActivity() {
@@ -39,7 +42,8 @@ class DashboardActivity : AppCompatActivity() {
         if (keypass != null) {
             lifecycleScope.launch {
                 try {
-                    val response = ApiClient.apiService.getDashboard(keypass)
+                    val apiService: ApiService by inject()
+                    val response = apiService.getDashboard(keypass)
                     if (response.isSuccessful && response.body() != null) {
                         val entityList: List<Entity> = response.body()!!.entities
                         entityAdapter.updateData(entityList)
