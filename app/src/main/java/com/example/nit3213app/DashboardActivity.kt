@@ -33,6 +33,13 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val logoutButton = findViewById<com.google.android.material.button.MaterialButton>(R.id.btnLogout)
+        logoutButton.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         // Set adapter to the RecyclerView
         recyclerView.adapter = entityAdapter
 
