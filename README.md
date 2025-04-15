@@ -108,7 +108,7 @@ Lecturer: Dr. Madiha Anjum
 
 ---
 
-## 🎨 Image & Icon Credits
+## Image & Icon Credits
 
 - **Login Screen Icon**:  
   *"Login icon"* by Freepik – [Flaticon](https://www.flaticon.com/free-icon/login_4496184)
