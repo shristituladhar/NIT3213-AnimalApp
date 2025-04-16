@@ -4,7 +4,7 @@ This Android app was developed for the NIT3213 Final Assignment.
 It demonstrates API integration, clean Kotlin architecture, and dependency injection using Koin.
 
 It includes three screens: **Login**, **Dashboard**, and **Details**
-and interacts with the official `vu-nit3213-api` to authenticate users and display animal information.
+and interacts with the official `vu-nit3213-api` to  authenticate users and fetch dynamic entity data based on their assigned keypass.
 
 ---
 
@@ -24,8 +24,8 @@ and interacts with the official `vu-nit3213-api` to authenticate users and displ
 - Includes a **Logout** button to return to login
 
 ### Details Screen
-- Displays full entity data:
-    - Species, scientific name, habitat, diet, conservation status, lifespan, and description
+- Displays all available properties from the entity object dynamically 
+- Works for any entity type (e.g., books, artworks, animals)
 - Uses scrollable Material Design layout
 
 ---
@@ -47,7 +47,7 @@ and interacts with the official `vu-nit3213-api` to authenticate users and displ
 Use these credentials to log in:
 
 - **Username:** `Shristi`
-- **Password:** `s4678657`
+- **Password:** `s4678657` or any other credentials
 
 > This returns `keypass = animals` and loads real data from the API
 
@@ -58,7 +58,7 @@ Use these credentials to log in:
 1. Open this project in **Android Studio**
 2. Ensure **minimum SDK = 31**
 3. Sync Gradle and build the project
-4. Click '▶' or 'run' to run the app on emulator or device
+4. Run the app on emulator or physical device
 
 ---
 
@@ -86,7 +86,7 @@ Examples:
 
 ## Project Organization
 
-All Kotlin files are inside: com.example.nit3213app/
+All Kotlin files are located inside: com.example.nit3213app/
 
 ---
 
