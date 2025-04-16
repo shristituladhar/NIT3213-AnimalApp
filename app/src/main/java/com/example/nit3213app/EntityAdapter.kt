@@ -14,7 +14,6 @@ class EntityAdapter(
     private val onClick: (Entity) -> Unit
 ) : RecyclerView.Adapter<EntityAdapter.EntityViewHolder>() {
 
-
     class EntityViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val property1Text: TextView = itemView.findViewById(R.id.property1Text)
         val property2Text: TextView = itemView.findViewById(R.id.property2Text)
@@ -27,9 +26,15 @@ class EntityAdapter(
 
     override fun onBindViewHolder(holder: EntityViewHolder, position: Int) {
         val item = list[position]
-        holder.property1Text.text = "Species: ${item.species}"
-        holder.property2Text.text = "Scientific: ${item.scientificName}"
-        //to make the card clickable
+        val entries = item.properties.entries.toList()
+        
+        // Get first two property values or use default values
+        val property1 = entries.getOrNull(0)?.value?.toString() ?: "N/A"
+        val property2 = entries.getOrNull(1)?.value?.toString() ?: "N/A"
+
+        holder.property1Text.text = property1
+        holder.property2Text.text = property2
+
         holder.itemView.setOnClickListener {
             onClick(item)
         }
