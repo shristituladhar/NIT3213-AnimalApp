@@ -1,4 +1,4 @@
-# Animal Info App – NIT3213 Final Assignment
+# Animal Info App 
 
 This Android app was developed for the NIT3213 Final Assignment.
 It demonstrates API integration, clean Kotlin architecture, and dependency injection using Koin.
@@ -47,7 +47,7 @@ and interacts with the official `vu-nit3213-api` to  authenticate users and fetc
 Use these credentials to log in:
 
 - **Username:** `Shristi`
-- **Password:** `s4678657` or any other credentials
+- **Password:** `s4678657` or any other student credentials
 
 > This returns `keypass = animals` and loads real data from the API
 
